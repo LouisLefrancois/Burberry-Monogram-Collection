@@ -14,6 +14,7 @@
 
 body {
     background: var(--bg-color);
+    overflow-x: hidden;
 }
 
 .firstSection {
@@ -42,7 +43,7 @@ body {
 }
 
 .subtitle_w {
-    font-size: 2.2vw;
+    font-size: 2.18vw;
     -webkit-text-fill-color: transparent;
     -webkit-text-stroke-width: 1.6px;
     font-weight: 500;
@@ -121,4 +122,77 @@ body {
     justify-content: space-between;
     align-items: center;
     height: 100vh;
+}
+
+
+
+
+
+
+
+/* LOGO BANNER SLIDE */
+
+.auto_banner img {
+    object-fit: contain;
+    -webkit-user-drag: none;
+}
+
+.auto_banner {
+    white-space: nowrap;
+    overflow: hidden;
+    margin: 15px 5px;
+}
+
+.auto_banner::before, .auto_banner::after {
+    content: "";
+    position: absolute;
+
+    height: 120px;
+    width: 75px;    
+
+    z-index: 1000;
+}
+
+.auto_banner::before {
+    left: -20px;
+    background: #f3efef;
+    filter: blur(10px);
+}
+
+.auto_banner::after {
+    right: -20px;
+    background: #f3efef;
+    filter: blur(10px);
+}
+
+/* .auto_banner:hover .logos-slide {
+    animation-play-state: paused;
+} */
+
+.logos-slide {
+    display: inline-block;
+    animation: 60s slide infinite linear;
+}
+
+.logos-slide img {
+    height: 120px;
+    margin: 0 70px;
+}
+
+@keyframes slide {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+@keyframes slideright {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(100%);
+    }
 }
