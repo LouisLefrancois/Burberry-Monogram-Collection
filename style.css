@@ -1,20 +1,24 @@
 @import url('https://fonts.cdnfonts.com/css/next-art');
 
+:root {
+    --bg-color: #f3efef;
+    --blue-Burberry : #0006CF;
+}
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'NEXT ART', sans-serif;
 }
 
 body {
-    background: black;
+    background: var(--bg-color);
 }
 
 .firstSection {
-    font-family: 'NEXT ART', sans-serif;
+    position: relative;
     text-transform: uppercase;
-    background: #f4f1f1;
     color: #000;
     height: 100vh;
     width: 100%;
@@ -23,30 +27,30 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    z-index: 10;
 }
 
 .logo_w, .logo_b {
-    margin-bottom: 35px;
+    margin-bottom: 40px;
 }
 
 .title_w {
-    font-size: 8vw;
+    font-size: 6vw;
     -webkit-text-fill-color: transparent;
     -webkit-text-stroke-width: 2px;
     font-weight: 600;
 }
 
 .subtitle_w {
-    font-size: 2.9vw;
+    font-size: 2.2vw;
     -webkit-text-fill-color: transparent;
     -webkit-text-stroke-width: 1.6px;
     font-weight: 500;
 }
 
-.secondSection {
+.thirdSection {
     font-family: 'NEXT ART', sans-serif;
     text-transform: uppercase;
-    background: #f4f1f1;
     height: 100vh;
     width: 100%;
 
@@ -57,20 +61,64 @@ body {
 }
 
 .title_b {
-    font-size: 8vw;
+    font-size: 6vw;
     -webkit-text-fill-color: black;
     -webkit-text-stroke-width: 2px;
     font-weight: 600;
 }
 
 .subtitle_b {
-    font-size: 2.9vw;
+    font-size: 2.2vw;
     -webkit-text-fill-color: black;
     -webkit-text-stroke-width: 1.6px;
     font-weight: 500;
 }
 
-.thirdSection {
-    height: 100vh;
+.secondSection {
     background: black;
+}
+
+.title_Knight {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+
+    font-size: 5vw;
+    width: 100%;
+    color: white;
+}
+
+.fourthSection {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+}
+
+.left, .center, .right {
+    width: 30%;
+    text-align: center;
+}
+
+.left .logo_w, .center .logo_w, .right .logo_w,
+.left .logo_b, .center .logo_b, .right .logo_b {
+    width: 35%;
+}
+
+
+.left .title_w, .center .title_w, .right .title_w,
+.left .title_b, .center .title_b, .right .title_b {
+    font-size: 5vw;
+}
+
+.left .subtitle_w, .center .subtitle_w, .right .subtitle_w,
+.left .subtitle_b, .center .subtitle_b, .right .subtitle_b {
+    font-size: 1.8vw;
+}
+
+.fifthSection {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
 }
