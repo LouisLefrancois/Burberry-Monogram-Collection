@@ -85,16 +85,22 @@ body {
     background-attachment: fixed;
 }
 
-
-
 .title_Knight {
-    position: absolute;
+    position: relative;
+    top: 85vh;
     display: flex;
     justify-content: center;
 
     font-size: 5vw;
     width: 100%;
     color: white;
+    mix-blend-mode: difference;
+}
+
+.imgsection {
+    /* display: flex; */
+    height: 100vh;
+    width: 100%;
 }
 
 .fourthSection {
