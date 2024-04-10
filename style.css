@@ -115,14 +115,16 @@ body {
   padding: 3px;
 
   object-fit: cover;
-  transition: 0.5s;
 
   user-select: none;
   -webkit-user-drag: none;
+  filter: brightness(.8);
+  transition: .5s;
 }
 
 .imgSection img:hover {
-  filter: blur(3px);
+    filter: brightness(1);
+    /* filter: blur(0); */
 }
 
 .div1 {
@@ -164,11 +166,14 @@ body {
 
 
 
-a {
+.link-container {
     display: grid;
+    position: relative;
+    color: var(--blue-Burberry);
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 2px;
 }
-
-
 
 .products-grid {
     display: grid;
@@ -194,6 +199,13 @@ a {
   -webkit-user-drag: none;
 }
 
+.click {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+}
+
+
 .products-grid .bag-black-1:hover,
 .products-grid .bag-orange-1:hover,
 .products-grid .wallet-black-1:hover,
@@ -216,6 +228,7 @@ a {
 .wallet-orange-1, .wallet-orange-2 {
   grid-area: 1 / 4 / 2 / 5;
 }
+
 
 
 
@@ -281,6 +294,21 @@ a {
   height: 100vh;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* LOGO BANNER SLIDE */
 
 .auto_banner {
@@ -331,6 +359,20 @@ a {
   margin: 0 70px;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @keyframes slide {
   from {
     transform: translateX(0);
@@ -348,32 +390,5 @@ a {
 
   to {
     transform: translateX(100%);
-  }
-}
-
-@keyframes grain {
-  0%,
-  100% {
-    transform: translate(0, 0);
-  }
-
-  10% {
-    transform: translate(-5%, -10%);
-  }
-
-  30% {
-    transform: translate(3%, -15%);
-  }
-
-  50% {
-    transform: translate(12%, 9%);
-  }
-
-  70% {
-    transform: translate(9%, 4%);
-  }
-
-  90% {
-    transform: translate(-1%, 7%);
   }
 }
