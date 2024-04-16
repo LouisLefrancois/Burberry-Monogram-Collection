@@ -17,6 +17,49 @@ body {
   overflow-x: hidden;
 }
 
+
+
+
+
+.first-img-container, .second-img-container {
+  display: flex;
+  justify-content: space-between;
+
+  padding: 10px;
+}
+
+.first-img-container img, .second-img-container img {
+  filter: brightness(.8);
+  transition: filter .5s;
+  user-select: none;
+  -webkit-user-drag: none;
+
+  width: 33%;
+  height: 33%;
+
+  padding: 5px;
+  border: 2px solid var(--blue-Burberry);
+}
+
+.img1, .img2, .img3, .img4, .img5, .img6 {
+  object-fit: cover;
+  height: 100px;
+}
+
+.img1:hover, .img2:hover, .img3:hover, .img4:hover, .img5:hover, .img6:hover {
+  filter: brightness(1);
+}
+
+
+
+
+
+
+
+
+
+
+
 .firstSection {
   position: relative;
   text-transform: uppercase;
@@ -229,23 +272,6 @@ body {
   grid-area: 1 / 4 / 2 / 5;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .fourthSection {
   display: flex;
   justify-content: space-between;
@@ -293,21 +319,6 @@ body {
   align-items: center;
   height: 100vh;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* LOGO BANNER SLIDE */
 
@@ -365,6 +376,52 @@ body {
 
 
 
+.aaa {
+  display: flex;
+  text-align: left;
+  align-items: center;
+
+  height: 100%;
+  width: 100%;
+  
+  padding: 20px;
+}
+
+.aaa img {
+  /* height: 50%; */
+  width: 50%;
+}
+
+.text-container {
+  /* padding: 10px; */
+}
+
+ul {
+  display: flex;
+  padding: 10px 0 0;
+  list-style: none;
+}
+
+li {
+  padding: 5px 35px 0 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.first-txt {
+  padding: 0 0 10px;
+  color: var(--blue-Burberry);
+}
+
+.second-txt {
+  font-size: 16px;
+  line-height: 20px;
+  padding: 10px 0;
+
+  width: 85%;
+}
 
 
 
