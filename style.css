@@ -155,7 +155,7 @@ header {
   height: 33%;
 
   padding: 5px;
-  border: 2px solid var(--blue-Burberry);
+  /* border: 2px solid var(--blue-Burberry); */
 }
 
 .img1, .img2, .img3, .img4, .img5, .img6 {
@@ -178,10 +178,12 @@ header {
 
 
 .firstSection {
+  font-family: "NEXT ART", sans-serif; 
+
   position: relative;
   text-transform: uppercase;
   color: #000;
-  height: 100vh;
+  /* height: 100vh; */
   width: 100%;
 
   display: flex;
@@ -275,7 +277,7 @@ header {
   height: 600px;
   width: 100%;
 
-  border: 2px solid var(--blue-Burberry);
+  /* border: 2px solid var(--blue-Burberry); */
   padding: 3px;
 
   object-fit: cover;
@@ -352,7 +354,7 @@ header {
   height: 100%;
   width: 100%;
 
-  border: 2px solid var(--blue-Burberry);
+  /* border: 2px solid var(--blue-Burberry); */
   padding: 3px;
 
   object-fit: cover;
@@ -396,10 +398,12 @@ header {
 }
 
 .fourthSection {
+  font-family: "NEXT ART", sans-serif; 
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 100vh;
+  margin: 20px;
+  /* height: 100vh; */
 }
 
 .left,
@@ -436,11 +440,20 @@ header {
   font-size: 1.8vw;
 }
 
+.fullll {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 .fifthSection {
+  font-family: "NEXT ART", sans-serif; 
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 100vh;
+  margin: 20px;
+  /* height: 100vh; */
 }
 
 /* LOGO BANNER SLIDE */
@@ -550,6 +563,87 @@ a {
 
   width: 85%;
 }
+
+
+
+
+.fulllllllll {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: space-between;
+}
+
+.cards-img {
+  margin: 0 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.card-img {
+  position: relative;
+}
+
+.imgcards {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.card-number {
+  position: absolute;
+  margin: 12px 0 0 15px;
+  top: 0;
+  left: 0;
+  color: white;
+  border-radius: 4px 0 0 0;
+}
+
+.txt-card-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+.hxxxxxxx {
+  font-family: "Luxurious Roman", serif;
+  height: 100%;
+  width: 50%;
+  font-size: 42px;
+  font-weight: 500;
+  padding: 20px 0 0 20px;
+}
+
+.pxxxxxxx {
+  font-family: "Luxurious Roman", serif;
+  height: 100%;
+  width: 50%;
+  font-size: 28px;
+  padding: 20px 20px 0 0;
+  text-align: end;
+}
+
+.centerz {
+  font-family: "Luxurious Roman", serif;
+  font-weight: 500;
+  font-size: 32px;
+  text-align: center;
+  color: var(--blue-Burberry);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
