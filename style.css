@@ -592,9 +592,13 @@ a {
 
 .card-number {
   position: absolute;
-  margin: 12px 0 0 15px;
-  top: 0;
-  left: 0;
+  /* font-family: "NEXT ART", sans-serif;  */
+font-family: "Luxurious Roman", serif;
+  font-weight: 300;
+  font-size: 16px;
+  /* margin: 30px 0 0 30px; */
+  top: 30px;
+  left: 30px;
   color: white;
   border-radius: 4px 0 0 0;
 }
