@@ -141,8 +141,7 @@ header {
 .first-img-container, .second-img-container {
   display: flex;
   justify-content: space-between;
-
-  padding: 10px;
+  padding: 15px 15px;
 }
 
 .first-img-container img, .second-img-container img {
@@ -152,7 +151,7 @@ header {
   -webkit-user-drag: none;
 
   width: 33%;
-  height: 33%;
+  height: 100%;
 
   padding: 5px;
   /* border: 2px solid var(--blue-Burberry); */
@@ -183,7 +182,7 @@ header {
   position: relative;
   text-transform: uppercase;
   color: #000;
-  /* height: 100vh; */
+  height: 100vh;
   width: 100%;
 
   display: flex;
@@ -448,6 +447,7 @@ header {
 }
 
 .fifthSection {
+  height: 100vh;
   font-family: "NEXT ART", sans-serif; 
   display: flex;
   justify-content: space-between;
@@ -461,7 +461,7 @@ header {
 .auto_banner {
     white-space: nowrap;
     overflow: hidden;
-    margin: 15px 5px;
+    margin: auto 5px 0;
     user-select: none;
 }
 
@@ -568,9 +568,9 @@ a {
 
 
 .fulllllllll {
+  height: 100vh;
   display: flex;
   flex-direction: column;
-  height: 100vh;
   justify-content: space-between;
 }
 
@@ -631,6 +631,8 @@ font-family: "Luxurious Roman", serif;
 .centerz {
   font-family: "Luxurious Roman", serif;
   font-weight: 500;
+  width: 350px;
+  margin: 0 auto;
   font-size: 32px;
   text-align: center;
   color: var(--blue-Burberry);
@@ -644,6 +646,96 @@ font-family: "Luxurious Roman", serif;
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* mini img */
+
+
+
+
+#cursor-image {
+  width: 300px;
+  height: 300px;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: fixed;
+  z-index: 9999;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out, transform 0.2s ease-in-out, background-image 0.2s ease-in-out;
+  background-size: contain;
+}
+
+.hover-area {
+  cursor: none;
+  position: relative;
+  display: inline-block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.collabs {
+  /* font-family: "NEXT ART", sans-serif;  */
+  font-family: "Luxurious Roman", serif;
+  font-weight: 500;
+  text-align: center;
+  font-size: 42px;
+  text-transform: capitalize;
+  margin: auto;
+}
+
+
+
+.line {
+  position: relative;
+  width: 300px;
+  height: 1px;
+  background-color: black;
+  text-align: center;
+  align-items: center;
+  display: flex;
+  margin: auto;
+}
 
 
 
