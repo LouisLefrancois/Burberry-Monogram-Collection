@@ -24,3 +24,23 @@ hoverAreas.forEach((hoverArea) => {
     cursorImage.style.opacity = 0;
   });
 });
+
+document.addEventListener('DOMContentLoaded', function() {
+  const titles = document.querySelectorAll(".title-footer");
+
+  titles.forEach(title => {
+    title.addEventListener('click', function() {
+      var value = this.getAttribute("aria-expanded");
+      var contentId = this.getAttribute("aria-controls");
+      var content = document.getElementById(contentId);
+
+      if (value === "true") {
+        this.setAttribute("aria-expanded", "false");
+        content.setAttribute("hidden", "");
+      } else {
+        this.setAttribute("aria-expanded", "true");
+        content.removeAttribute("hidden");
+      }
+    });
+  });
+});

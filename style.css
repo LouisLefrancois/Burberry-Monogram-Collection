@@ -59,8 +59,9 @@ header {
 }
 
 .navbar-link {
-  font-family: "NEXT ART", sans-serif; 
-  font-size: 16px;
+  font-family: "NEXT ART", sans-serif;
+  /* font-size: 16px; */
+  font-size: clamp(12px, 1.8vw, 16px);
   padding: 0px 25px;
 }
 
@@ -78,7 +79,7 @@ header {
   width: 100%;
   /* padding: 0 20px 20px; */
   padding: 0 20px;
-} 
+}
 
 
 .h1-tb {
@@ -138,13 +139,15 @@ header {
 
 
 
-.first-img-container, .second-img-container {
+.first-img-container,
+.second-img-container {
   display: flex;
   justify-content: space-between;
   padding: 15px 15px;
 }
 
-.first-img-container img, .second-img-container img {
+.first-img-container img,
+.second-img-container img {
   filter: brightness(.8);
   transition: filter .5s;
   user-select: none;
@@ -157,12 +160,22 @@ header {
   /* border: 2px solid var(--blue-Burberry); */
 }
 
-.img1, .img2, .img3, .img4, .img5, .img6 {
+.img1,
+.img2,
+.img3,
+.img4,
+.img5,
+.img6 {
   object-fit: cover;
   height: 100px;
 }
 
-.img1:hover, .img2:hover, .img3:hover, .img4:hover, .img5:hover, .img6:hover {
+.img1:hover,
+.img2:hover,
+.img3:hover,
+.img4:hover,
+.img5:hover,
+.img6:hover {
   filter: brightness(1);
 }
 
@@ -177,7 +190,7 @@ header {
 
 
 .firstSection {
-  font-family: "NEXT ART", sans-serif; 
+  font-family: "NEXT ART", sans-serif;
 
   position: relative;
   text-transform: uppercase;
@@ -240,17 +253,15 @@ header {
 .lastParallax {
   background-image: url("./images/equestrianknight.png");
   height: 100vh;
-  /* width: 100%; */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
-
   margin: 0 20px;
 }
 
 .title_Knight {
-  font-family: "NEXT ART", sans-serif; 
+  font-family: "NEXT ART", sans-serif;
 
   position: relative;
   top: 85vh;
@@ -288,8 +299,8 @@ header {
 }
 
 .imgSection img:hover {
-    filter: brightness(1);
-    /* filter: blur(0); */
+  filter: brightness(1);
+  /* filter: blur(0); */
 }
 
 .div1 {
@@ -332,21 +343,21 @@ header {
 
 
 .link-container {
-    display: grid;
-    position: relative;
-    color: var(--blue-Burberry);
-    font-size: 12px;
-    font-weight: 600;
-    letter-spacing: 2px;
+  display: grid;
+  position: relative;
+  color: var(--blue-Burberry);
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 2px;
 }
 
 .products-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 1fr;
-    grid-column-gap: 10px;
-    grid-row-gap: 0px;
-    padding: 10px 20px 20px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 10px;
+  grid-row-gap: 0px;
+  padding: 10px 20px 20px;
 }
 
 .products-grid img {
@@ -377,27 +388,31 @@ header {
 .products-grid .bag-orange-1:hover,
 .products-grid .wallet-black-1:hover,
 .products-grid .wallet-orange-1:hover {
-    opacity: 0;
+  opacity: 0;
 }
 
-.bag-black-1, .bag-black-2 {
-    grid-area: 1 / 1 / 2 / 2;
-  }
+.bag-black-1,
+.bag-black-2 {
+  grid-area: 1 / 1 / 2 / 2;
+}
 
-.bag-orange-1, .bag-orange-2 {
+.bag-orange-1,
+.bag-orange-2 {
   grid-area: 1 / 2 / 2 / 3;
 }
 
-.wallet-black-1, .wallet-black-2 {
+.wallet-black-1,
+.wallet-black-2 {
   grid-area: 1 / 3 / 2 / 4;
 }
 
-.wallet-orange-1, .wallet-orange-2 {
+.wallet-orange-1,
+.wallet-orange-2 {
   grid-area: 1 / 4 / 2 / 5;
 }
 
 .fourthSection {
-  font-family: "NEXT ART", sans-serif; 
+  font-family: "NEXT ART", sans-serif;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -448,7 +463,7 @@ header {
 
 .fifthSection {
   height: 100vh;
-  font-family: "NEXT ART", sans-serif; 
+  font-family: "NEXT ART", sans-serif;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -456,19 +471,28 @@ header {
   /* height: 100vh; */
 }
 
+.collabs {
+  font-family: "Luxurious Roman", serif;
+  font-weight: 500;
+  text-align: center;
+  font-size: clamp(24px, 5vw, 42px);
+  text-transform: capitalize;
+  margin: 30px 20px 25px;
+}
+
 /* LOGO BANNER SLIDE */
 
 .auto_banner {
-    white-space: nowrap;
-    overflow: hidden;
-    margin: auto 5px 0;
-    user-select: none;
+  white-space: nowrap;
+  overflow: hidden;
+  margin: 20px 5px;
+  user-select: none;
 }
 
 .auto_banner img {
-    object-fit: contain;
-    -webkit-user-drag: none;
-  }
+  object-fit: contain;
+  -webkit-user-drag: none;
+}
 
 .auto_banner::before,
 .auto_banner::after {
@@ -520,7 +544,7 @@ header {
 
   height: 100%;
   width: 100%;
-  
+
   padding: 20px;
 }
 
@@ -593,7 +617,7 @@ a {
 .card-number {
   position: absolute;
   /* font-family: "NEXT ART", sans-serif;  */
-font-family: "Luxurious Roman", serif;
+  font-family: "Luxurious Roman", serif;
   font-weight: 300;
   font-size: 16px;
   /* margin: 30px 0 0 30px; */
@@ -714,16 +738,8 @@ font-family: "Luxurious Roman", serif;
 
 
 
-.collabs {
-  /* font-family: "NEXT ART", sans-serif;  */
-  font-family: "Luxurious Roman", serif;
-  font-weight: 500;
-  text-align: center;
-  font-size: 42px;
-  text-transform: capitalize;
-  margin: auto;
-}
 
+/*
 
 
 .line {
@@ -735,14 +751,75 @@ font-family: "Luxurious Roman", serif;
   align-items: center;
   display: flex;
   margin: auto;
+} */
+
+
+
+
+.footer-menu {
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
+.column {
+  flex: 1 1 250px;
+  margin: 10px;
+  max-width: 300px;
+}
 
+.submenu {
+  display: none;
+}
 
+.title-footer {
+  font-family: "Luxurious Roman", serif;
+  font-size: clamp(16px, 4vw, 24px);
+  font-weight: 600;
+  text-align: center;
+  cursor: pointer;
+}
 
+.title-footer[aria-expanded="true"]+div .submenu {
+  display: block;
+}
 
+.title-footer:hover,
+.title-footer:active {
+  color: var(--blue-Burberry);
+}
 
+.submenu a {
+  font-size: clamp(14px, 2.5vw, 18px);
+  list-style: none;
+  font-family: "Luxurious Roman", serif;
+  color: black;
+}
 
+.submenu a:hover {
+  color: var(--blue-Burberry);
+}
+
+.submenu {
+  padding: 10px 0;
+  text-align: center;
+}
+
+.submenu li {
+  padding: 3px 0;
+}
+
+.end {
+  font-family: "Luxurious Roman", serif;
+  padding: 3.2rem;
+  text-align: center;
+  line-height: 24px;
+}
+
+.blue-link {
+  color: var(--blue-Burberry);
+}
 
 
 
