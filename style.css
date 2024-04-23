@@ -730,19 +730,19 @@ a {
   .navbar-list {
     text-align: center;
     display: flex;
-    flex-wrap: wrap; /* Permet aux éléments de passer à la ligne lorsque l'espace est insuffisant */
+    flex-wrap: wrap;
     padding: 15px;
   }
 
   .navbar-link {
-    width: 50%; /* Affiche deux liens par ligne */
+    width: 50%;
     padding: 10px 15px;
     font-size: 14px;
   }
 
-  .navbar-link:nth-child(3),
-  .navbar-link:nth-child(4),
-  .navbar-link:nth-child(5) {
+  .navbar-link:nth-child(1),
+  .navbar-link:nth-child(2),
+  .navbar-link:nth-child(3) {
     width: 33%;
   }
 
@@ -781,6 +781,7 @@ a {
   }
 
   .imgSection img {
+    height: 400px;
     padding: 0;
   }
 
@@ -798,12 +799,14 @@ a {
   }
 
   .lastParallax {
-    margin: 0 5px;
-    background-size: contain;
+    margin: 5px;
+    height: 55vw;
+    background-size: cover;
+    background-attachment: unset;
   }
 
   .title_Knight {
-    top: 93%;
+    top: 75%;
     font-size: 7vw;
     text-align: center;
   }
