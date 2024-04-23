@@ -103,104 +103,6 @@ header {
   font-size: clamp(10px, 4vw, 72px);
 }
 
-.first-img-container,
-.second-img-container {
-  display: flex;
-  justify-content: space-between;
-  padding: 15px 15px;
-}
-
-.first-img-container img,
-.second-img-container img {
-  filter: brightness(.8);
-  transition: filter .5s;
-  user-select: none;
-  -webkit-user-drag: none;
-  width: 33%;
-  height: 100%;
-  padding: 5px;
-}
-
-.img1,
-.img2,
-.img3,
-.img4,
-.img5,
-.img6 {
-  object-fit: cover;
-  height: 100px;
-}
-
-.img1:hover,
-.img2:hover,
-.img3:hover,
-.img4:hover,
-.img5:hover,
-.img6:hover {
-  filter: brightness(1);
-}
-
-.firstSection {
-  font-family: "NEXT ART", sans-serif;
-
-  position: relative;
-  text-transform: uppercase;
-  color: #000;
-  height: 100vh;
-  width: 100%;
-
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  z-index: 10;
-}
-
-.logo_w,
-.logo_b {
-  margin-bottom: 40px;
-}
-
-.title_w {
-  font-size: 6vw;
-  -webkit-text-fill-color: transparent;
-  -webkit-text-stroke-width: 2px;
-  font-weight: 600;
-}
-
-.subtitle_w {
-  font-size: 2.18vw;
-  -webkit-text-fill-color: transparent;
-  -webkit-text-stroke-width: 1.6px;
-  font-weight: 500;
-}
-
-.thirdSection {
-  font-family: "NEXT ART", sans-serif;
-  text-transform: uppercase;
-  height: 100vh;
-  width: 100%;
-
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.title_b {
-  font-size: 6vw;
-  -webkit-text-fill-color: black;
-  -webkit-text-stroke-width: 2px;
-  font-weight: 600;
-}
-
-.subtitle_b {
-  font-size: 2.2vw;
-  -webkit-text-fill-color: black;
-  -webkit-text-stroke-width: 1.6px;
-  font-weight: 500;
-}
-
 .lastParallax {
   background-image: url("./images/equestrianknight.png");
   height: 100vh;
@@ -213,7 +115,6 @@ header {
 
 .title_Knight {
   font-family: "NEXT ART", sans-serif;
-
   position: relative;
   top: 85vh;
   display: flex;
@@ -338,7 +239,7 @@ header {
   grid-area: 1 / 4 / 2 / 5;
 }
 
-.left,
+/* .left,
 .center,
 .right {
   width: 30%;
@@ -370,14 +271,7 @@ header {
 .center .subtitle_b,
 .right .subtitle_b {
   font-size: 1.8vw;
-}
-
-.fullll {
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
+} */
 
 .collabs {
   font-family: "Luxurious Roman", serif;
@@ -457,15 +351,6 @@ ul {
   list-style: none;
 }
 
-.list-link {
-  display: flex;
-  padding: 10px 0 0;
-  list-style: none;
-}
-
-.txt-list-link {
-  padding: 5px 35px 0 0;
-}
 
 a {
   text-decoration: none;
@@ -818,7 +703,16 @@ a {
   .auto_banner::before,
   .auto_banner::after {
     height: 100px;
-    width: 60px;
+    width: 20px;
+    filter: blur(2px);
+  }
+
+  .auto_banner::before {
+    left: 0px;
+  }
+
+  .auto_banner::after {
+    right: 0px;
   }
 
   .logos-slide img {
