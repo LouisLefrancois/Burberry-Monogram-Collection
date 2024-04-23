@@ -354,10 +354,8 @@ a {
 .auto_banner::after {
   content: "";
   position: absolute;
-
   height: 120px;
   width: 75px;
-
   z-index: 1000;
 }
 
@@ -455,53 +453,6 @@ a {
 .blue-link {
   color: var(--blue-Burberry);
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -615,7 +566,7 @@ a {
   .txtonimage {
     font-size: clamp(20px, 4vw, 72px);
   }
-  
+
   .i {
     padding: 0 5px;
   }
