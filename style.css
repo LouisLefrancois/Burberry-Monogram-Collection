@@ -1,5 +1,6 @@
 @import url("https://fonts.cdnfonts.com/css/next-art");
 @import url('https://fonts.googleapis.com/css2?family=Luxurious+Roman&display=swap');
+
 /*
 
 font-family: "NEXT ART", sans-serif; 
@@ -234,12 +235,8 @@ header {
 .imgSection img {
   height: 600px;
   width: 100%;
-
-  /* border: 2px solid var(--blue-Burberry); */
   padding: 3px;
-
   object-fit: cover;
-
   user-select: none;
   -webkit-user-drag: none;
   filter: brightness(.8);
@@ -248,7 +245,6 @@ header {
 
 .imgSection img:hover {
   filter: brightness(1);
-  /* filter: blur(0); */
 }
 
 .div1 {
@@ -527,7 +523,7 @@ a {
   margin-top: 5%;
 }
 
-.hxxxxxxx {
+.txt-card-h {
   font-family: "Luxurious Roman", serif;
   height: 100%;
   width: 50%;
@@ -538,7 +534,7 @@ a {
   padding: 20px 0 0 20px;
 }
 
-.pxxxxxxx {
+.txt-card-p {
   font-family: "Luxurious Roman", serif;
   height: 100%;
   width: 50%;
@@ -558,8 +554,8 @@ a {
 }
 
 #cursor-image {
-  width: 300px;
-  height: 300px;
+  width: 18%;
+  height: 34%;
   background-repeat: no-repeat;
   background-position: center;
   position: fixed;
@@ -643,7 +639,7 @@ a {
 
 
 
-
+/* ANIM BANNER SLIDE */
 
 @keyframes slide {
   from {
@@ -657,17 +653,20 @@ a {
 
 
 
-
-
-
-
-
-
 /* RESPONSIVE @ MEDIA QUERIES */
 
 /* TABLET */
 
 @media screen and (max-width: 1024px) {
+
+  #cursor-image {
+    display: none;
+  }
+
+  .hover-area {
+    cursor: auto;
+  }
+
   .txt-card-img {
     flex-direction: column;
     margin: 5% 20px 0;
@@ -681,7 +680,7 @@ a {
     width: 50%;
   }
 
-  .hxxxxxxx {
+  .txt-card-h {
     justify-content: center;
     text-align: center;
     padding: 20px 0;
@@ -689,7 +688,7 @@ a {
     width: 100%;
   }
 
-  .pxxxxxxx {
+  .txt-card-p {
     padding: 0;
     text-align: center;
     font-size: 24px;
@@ -721,6 +720,36 @@ a {
 /* MOBILE */
 
 @media screen and (max-width: 768px) {
+
+  .bar {
+    border: 1px solid black;
+    width: 120px;
+    margin: 20px auto 8px
+  }
+
+  .navbar-list {
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap; /* Permet aux éléments de passer à la ligne lorsque l'espace est insuffisant */
+    padding: 15px;
+  }
+
+  .navbar-link {
+    width: 50%; /* Affiche deux liens par ligne */
+    padding: 10px 15px;
+    font-size: 14px;
+  }
+
+  .navbar-link:nth-child(3),
+  .navbar-link:nth-child(4),
+  .navbar-link:nth-child(5) {
+    width: 33%;
+  }
+
+  .txtonimage {
+    font-size: clamp(20px, 4vw, 72px);
+  }
+  
   .i {
     padding: 0 5px;
   }
@@ -730,7 +759,7 @@ a {
   }
 
   .all-cards {
-    margin: 4px;
+    margin: 0 4px 4px;
   }
 
   .txt-card-img {
@@ -763,8 +792,14 @@ a {
     padding: 3px;
   }
 
+  .click {
+    bottom: 12px;
+    left: 12px;
+  }
+
   .lastParallax {
     margin: 0 5px;
+    background-size: contain;
   }
 
   .title_Knight {
@@ -790,9 +825,10 @@ a {
 
   .footer-menu {
     padding: 0 5px;
+    margin: 0;
   }
 
   .end {
-    padding: 50px 5px 25px;
+    padding: 45px 15px 35px;
   }
 }

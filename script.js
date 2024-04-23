@@ -25,6 +25,8 @@ hoverAreas.forEach((hoverArea) => {
   });
 });
 
+// expanded footer menu
+
 document.addEventListener('DOMContentLoaded', function() {
   const titles = document.querySelectorAll(".title-footer");
 
